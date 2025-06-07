@@ -19,7 +19,7 @@ def main():
     x = SCREEN_WIDTH // 2
     y = SCREEN_HEIGHT // 2
     pygame.display.set_caption("Asteroids") # Set the window title
-
+    
     updatable = pygame.sprite.Group() # Createddddd a group for updatable objects
     drawable = pygame.sprite.Group() # Create a group for drawable objects
     asteroids = pygame.sprite.Group() # Create a group for asteroids
