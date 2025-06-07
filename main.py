@@ -15,6 +15,14 @@ def main():
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     
+    while True:
+
+        for event in pygame.event.get(): # Check for events
+            if event.type == pygame.QUIT: # If the quit event is triggered
+                return # Exit the game loop
+        screen.fill((0, 0, 0)) # Fill the screen with black
+        pygame.display.flip() # Update the display
+
     
 
 
