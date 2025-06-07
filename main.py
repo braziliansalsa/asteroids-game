@@ -26,7 +26,7 @@ def main():
         pygame.display.flip() # Update the display
         pygame.time.Clock().tick(60) # Limit the frame rate to 60 FPS
         dt = pygame.time.Clock().tick(60) / 1000.0
-        print(f"Delta time: {dt:.3f} seconds")
+        #print(f"Delta time: {dt:.3f} seconds")
 
 
 if __name__ == "__main__":
