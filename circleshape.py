@@ -17,3 +17,8 @@ class CircleShape(pygame.sprite.Sprite): # This is a base class for circular sha
         pass
     def update(self, dt): # Update the circle shape's position based on its velocity and delta time 
         pass
+
+    def collide(self, other):
+        # Check for collision with another circle shape
+        return (self.position.distance_to(other.position) <= (self.radius + other.radius))
+        
