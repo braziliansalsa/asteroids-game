@@ -15,7 +15,5 @@ class CircleShape(pygame.sprite.Sprite): # This is a base class for circular sha
 
     def draw(self, screen): # Draw the circle shape on the screen
         pass
-        # sub-classes must override
-    def update(self, dt): # Update the circle shape's position based on its velocity and delta time
-        # sub-classes must override
+    def update(self, dt): # Update the circle shape's position based on its velocity and delta time 
         pass
