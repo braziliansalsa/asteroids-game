@@ -43,6 +43,11 @@ def main():
         
         updatable.update(dt)
         for asteroid in asteroids:
+            for shot in shots:
+                if asteroid.collide(shot):
+                    print("Asteroid destroyed!")
+                    shot.kill()
+                    asteroid.kill()
             if asteroid.collide(player):
                 print("Game over!")
                 sys.exit()
